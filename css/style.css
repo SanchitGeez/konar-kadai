@@ -248,6 +248,17 @@
     border-bottom: 2px solid var(--primary);
 }
 
+.menu-price{
+    margin-right: 10px;
+    font-size: smaller;
+}
+
+.item-container{
+    display: flex;
+    align-content: center;
+    margin-top: 10px;
+}
+
 
 /*** Youtube Video ***/
 .video {
@@ -499,3 +510,20 @@
 .sub-footer{
     padding: 0;
 }
+
+/* accordian */
+.accordion-item {
+    border: 1px solid #ccc;
+  }
+  
+  .accordion-header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .accordion-content {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+  }

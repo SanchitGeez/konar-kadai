@@ -117,3 +117,17 @@
     
 })(jQuery);
 
+//Accordian
+
+var accordionHeaders = document.querySelectorAll('.accordion-header');
+
+accordionHeaders.forEach(function(header) {
+  header.addEventListener('click', function() {
+    var content = this.nextElementSibling;
+    if (content.style.height) {
+      content.style.height = null;
+    } else {
+      content.style.height = content.scrollHeight + 'px';
+    }
+  });
+});
